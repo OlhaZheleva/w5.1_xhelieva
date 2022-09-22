@@ -5,11 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
 </head>
 
 <body>
-
+    <header></header>
+    <main>
+        <div class="wrapper">
+            <p class="category">(Booking)</p>
+            <h1 class="title">Send <i>an email</i></h1>
+            <p class="sub-title">If you have a general or project enquiry, please
+                drop me an email — available now</p>
+            <form class="form" action="" method="GET">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Your email" required />
+                </div>
+                <div class="name">
+                    <label for="name">Name</label>
+                    <input type="name" placeholder="Your name" required />
+                </div>
+                <div class="message">
+                    <label for="textarea">Message</label>
+                    <textarea name="textarea" id="" cols="30" rows="1" placeholder="Start typing here"></textarea>
+                </div>
+                <div class="select">
+                    <select name="project" id="">
+                        <option value="" disabled selected hidden>Choose</option>
+                        <option value="1">Reserve for personal event</option>
+                        <option value="2">Buy tickets for a next concert</option>
+                        <option value="3">Reserve from a venue</option>
+                        <option value="4">Other</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="rulls" name="rulls" required>
+                    <label for="rulls">I agree to receive ocasional newsletter with latest news and updates</label>
+                </div>
+                <button class="button">
+                    <span></span>
+                    <p>Send</p>
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 
 </html>
